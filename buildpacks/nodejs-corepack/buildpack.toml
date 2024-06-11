@@ -1,7 +1,7 @@
 api = "0.8"
 
 [buildpack]
-id = "heroku/nodejs-corepack"
+id = "neetodeploy/nodejs-corepack"
 version = "0.1.2"
 name = "Heroku Node.js Corepack"
 homepage = "https://github.com/heroku/buildpacks-nodejs"

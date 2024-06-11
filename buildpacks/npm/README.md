@@ -1,6 +1,6 @@
 # Node.js NPM Cloud Native Buildpack
 
-This buildpack builds on top of the existing [Node.js Engine Cloud Native Buildpack](https://github.com/heroku/nodejs-engine-buildpack). It runs subsequent scripts after Node is install.
+This buildpack builds on top of the existing [Node.js Engine Cloud Native Buildpack](https://github.com/neetodeploy/nodejs-engine-buildpack). It runs subsequent scripts after Node is install.
 
 - Run automatically
   - `npm install` or `npm ci`
@@ -34,14 +34,14 @@ bpkg install rylnd/shpec
 Right now, we are prototyping with a local version of the buildpack. Clone it to your machine.
 
 ```sh
-git clone git@github.com:heroku/nodejs-npm-buildpack.git
+git clone git@github.com:neetodeploy/nodejs-npm-buildpack.git
 ```
 
 Clone the Heroku Node.js Engine Cloud Native Buildpack.
 
 ```sh
 cd .. # change from nodejs-npm-buildpack directory
-git clone git@github.com:heroku/nodejs-engine-buildpack.git
+git clone git@github.com:neetodeploy/nodejs-engine-buildpack.git
 ```
 
 ### Build the image
@@ -71,17 +71,17 @@ For local development, you'll want the file to look like this:
 
 ```toml
 [[buildpacks]]
-  id = "heroku/nodejs-engine"
+  id = "neetodeploy/nodejs-engine"
   uri = "../nodejs-engine-buildpack"
 
 [[buildpacks]]
-  id = "heroku/nodejs-npm"
+  id = "neetodeploy/nodejs-npm"
   uri = "../nodejs-npm-buildpack"
 
 [[order]]
   group = [
-    { id = "heroku/nodejs-engine", version = "0.4.3" },
-    { id = "heroku/nodejs-npm", version = "0.1.4" }
+    { id = "neetodeploy/nodejs-engine", version = "0.4.3" },
+    { id = "neetodeploy/nodejs-npm", version = "0.1.4" }
   ]
 
 [stack]

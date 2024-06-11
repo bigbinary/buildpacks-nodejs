@@ -1,7 +1,7 @@
 api = "0.6"
 
 [buildpack]
-id = "heroku/nodejs-test"
+id = "neetodeploy/nodejs-test"
 version = "0.0.0"
 name = "Node.js"
 homepage = "https://github.com/heroku/buildpacks-nodejs"
@@ -9,16 +9,16 @@ homepage = "https://github.com/heroku/buildpacks-nodejs"
 [[order]]
 
 [[order.group]]
-id = "heroku/nodejs-engine"
+id = "neetodeploy/nodejs-engine"
 version = "0.8.16"
 
 [[order.group]]
-id = "heroku/nodejs-corepack"
+id = "neetodeploy/nodejs-corepack"
 version = "0.1.2"
 optional = true
 
 [[order.group]]
-id = "heroku/nodejs-yarn"
+id = "neetodeploy/nodejs-yarn"
 version = "0.3.3"
 
 [[order.group]]
@@ -29,11 +29,11 @@ optional = true
 [[order]]
 
 [[order.group]]
-id = "heroku/nodejs-engine"
+id = "neetodeploy/nodejs-engine"
 version = "0.8.16"
 
 [[order.group]]
-id = "heroku/nodejs-npm"
+id = "neetodeploy/nodejs-npm"
 version = "0.5.3"
 
 [[order.group]]

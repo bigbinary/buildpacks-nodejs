@@ -24,22 +24,22 @@ impl fmt::Display for Builder {
 
 pub fn get_function_invoker_buildpacks() -> Vec<BuildpackReference> {
     vec![
-        BuildpackReference::Other(String::from("heroku/nodejs-engine")),
-        BuildpackReference::Other(String::from("heroku/nodejs-npm")),
+        BuildpackReference::Other(String::from("neetodeploy/nodejs-engine")),
+        BuildpackReference::Other(String::from("neetodeploy/nodejs-npm")),
         BuildpackReference::Crate,
     ]
 }
 
 pub fn get_yarn_buildpacks() -> Vec<BuildpackReference> {
     vec![
-        BuildpackReference::Other(String::from("heroku/nodejs-engine")),
+        BuildpackReference::Other(String::from("neetodeploy/nodejs-engine")),
         BuildpackReference::Crate,
     ]
 }
 
 pub fn get_corepack_buildpacks() -> Vec<BuildpackReference> {
     vec![
-        BuildpackReference::Other(String::from("heroku/nodejs-engine")),
+        BuildpackReference::Other(String::from("neetodeploy/nodejs-engine")),
         BuildpackReference::Crate,
     ]
 }

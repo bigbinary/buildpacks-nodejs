@@ -1,0 +1,14 @@
+[buildpack]
+uri = "."
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/packaged/x86_64-unknown-linux-musl/debug/neetodeploy_nodejs-engine"
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/packaged/x86_64-unknown-linux-musl/debug/neetodeploy_nodejs-yarn"
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/packaged/x86_64-unknown-linux-musl/debug/neetodeploy_nodejs-corepack"
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/npm"
+
+[platform]
+os = "linux"

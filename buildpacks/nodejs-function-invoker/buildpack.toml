@@ -1,7 +1,7 @@
 api = "0.8"
 
 [buildpack]
-id = "heroku/nodejs-function-invoker"
+id = "neetodeploy/nodejs-function-invoker"
 version = "0.3.11"
 name = "Heroku Node.js Function Invoker"
 homepage = "https://github.com/heroku/buildpacks-nodejs"

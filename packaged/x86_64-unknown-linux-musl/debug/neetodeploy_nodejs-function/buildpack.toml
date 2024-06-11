@@ -1,0 +1,29 @@
+api = "0.2"
+
+[buildpack]
+id = "neetodeploy/nodejs-function"
+version = "0.9.18"
+name = "Node.js Function"
+homepage = "https://github.com/heroku/buildpacks-nodejs"
+
+[[buildpack.licenses]]
+type = "MIT"
+
+[[order]]
+
+[[order.group]]
+id = "neetodeploy/nodejs-engine"
+version = "0.8.15"
+
+[[order.group]]
+id = "neetodeploy/nodejs-npm"
+version = "0.5.2"
+
+[[order.group]]
+id = "neetodeploy/nodejs-function-invoker"
+version = "0.3.10"
+
+[metadata]
+[metadata.release]
+[metadata.release.docker]
+repository = "public.ecr.aws/heroku-buildpacks/heroku-nodejs-function-buildpack"

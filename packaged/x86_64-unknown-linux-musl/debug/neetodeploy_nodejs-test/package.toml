@@ -1,0 +1,23 @@
+[buildpack]
+uri = "."
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/nodejs-engine"
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/nodejs-corepack"
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/npm"
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/nodejs-yarn"
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/nodejs-corepack"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/procfile-cnb:2.0.0"
+
+[platform]
+os = "linux"

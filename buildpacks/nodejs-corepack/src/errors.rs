@@ -7,7 +7,7 @@ pub(crate) fn on_error(err: libcnb::Error<CorepackBuildpackError>) {
     match err {
         libcnb::Error::BuildpackError(bp_err) => on_buildpack_error(bp_err),
         libcnb_err => log_error(
-            "heroku/nodejs-corepack internal buildpack error",
+            "neetodeploy/nodejs-corepack internal buildpack error",
             formatdoc! {"
                 An unexpected internal error was reported by the framework used
                 by this buildpack.
@@ -39,7 +39,7 @@ fn on_buildpack_error(bp_err: CorepackBuildpackError) {
         CorepackBuildpackError::ShimLayer(err) => on_layer_error("shim", &err),
         CorepackBuildpackError::ManagerLayer(err) => on_layer_error("manager", &err),
         CorepackBuildpackError::PackageJson(err) => log_error(
-            "heroku/nodejs-corepack package.json error",
+            "neetodeploy/nodejs-corepack package.json error",
             formatdoc! {"
                 There was an error while attempting to parse this project's
                 package.json file. Please make sure it is present and properly
@@ -49,7 +49,7 @@ fn on_buildpack_error(bp_err: CorepackBuildpackError) {
             "},
         ),
         CorepackBuildpackError::PackageManagerMissing => log_error(
-            "heroku/nodejs-corepack packageManager error",
+            "neetodeploy/nodejs-corepack packageManager error",
             formatdoc! {"
                 There was an error decoding the `packageManager` key from
                 this project's package.json. Please make sure it is present
@@ -60,7 +60,7 @@ fn on_buildpack_error(bp_err: CorepackBuildpackError) {
 }
 
 fn on_corepack_cmd_error(err_context: &str, cmd_err: crate::cmd::Error) {
-    let header = "heroku/nodejs-corepack corepack command error";
+    let header = "neetodeploy/nodejs-corepack corepack command error";
     match cmd_err {
         crate::cmd::Error::Exit(exit_err) => log_error(
             header,
@@ -82,7 +82,7 @@ fn on_corepack_cmd_error(err_context: &str, cmd_err: crate::cmd::Error) {
             header,
             formatdoc! {"
                 {err_context}. Error spawning the command. Please ensure corepack
-                was installed by another buildpack, such as heroku/nodejs-engine.
+                was installed by another buildpack, such as neetodeploy/nodejs-engine.
 
                 Details: {spawn_err}
             "},
@@ -100,7 +100,7 @@ fn on_corepack_cmd_error(err_context: &str, cmd_err: crate::cmd::Error) {
 
 fn on_layer_error(layer_name: &str, io_err: &std::io::Error) {
     log_error(
-        "heroku/nodejs-corepack layer creation error",
+        "neetodeploy/nodejs-corepack layer creation error",
         formatdoc! {"
             Couldn't create the {layer_name} layer. An unexpected I/O error
             occurred.

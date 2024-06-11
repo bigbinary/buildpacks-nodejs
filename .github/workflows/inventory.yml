@@ -27,7 +27,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           title: "Update Node.js Engine Inventory"
-          commit-message: "Update Inventory for heroku/nodejs-engine\n\n${{ steps.set-diff-msg.outputs.msg }}"
+          commit-message: "Update Inventory for neetodeploy/nodejs-engine\n\n${{ steps.set-diff-msg.outputs.msg }}"
           branch: update-nodejs-inventory
           labels: "automation"
-          body: "Automated pull-request to update heroku/nodejs-engine inventory:\n\n${{ steps.set-diff-msg.outputs.msg }}"
+          body: "Automated pull-request to update neetodeploy/nodejs-engine inventory:\n\n${{ steps.set-diff-msg.outputs.msg }}"

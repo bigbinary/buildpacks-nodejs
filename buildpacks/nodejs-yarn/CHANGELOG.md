@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.1] 2023/01/17
 
 - No longer installs `yarn` if it's already been installed by another buildpack,
-  like heroku/nodejs-corepack ([#418](https://github.com/heroku/buildpacks-nodejs/pull/418))
+  like neetodeploy/nodejs-corepack ([#418](https://github.com/heroku/buildpacks-nodejs/pull/418))
 
 ## [0.3.0] 2022/12/05
 
@@ -66,8 +66,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] 2020/11/11
 ### Added
-- Add support for heroku-20 and bionic stacks ([#4](https://github.com/heroku/nodejs-yarn-buildpack/pull/4))
+- Add support for heroku-20 and bionic stacks ([#4](https://github.com/neetodeploy/nodejs-yarn-buildpack/pull/4))
 
 ## [0.0.1] 2019/12/08
 ### Added
-- Changelog entry for first release ([#1](https://github.com/heroku/nodejs-yarn-buildpack/pull/1))
+- Changelog entry for first release ([#1](https://github.com/neetodeploy/nodejs-yarn-buildpack/pull/1))

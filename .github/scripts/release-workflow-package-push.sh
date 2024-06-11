@@ -6,7 +6,7 @@ shopt -s globstar
 # It requires the following environment variables to function correctly:
 #
 # REQUESTED_BUILDPACK_ID - The ID of the buildpack to package and push to the container registry.
-# for example `heroku/nodejs-function` or `heroku/nodejs-engine`.
+# for example `neetodeploy/nodejs-function` or `neetodeploy/nodejs-engine`.
 
 function find_buildpack_toml_path() {
 	local requested_buildpack_id="${1}"

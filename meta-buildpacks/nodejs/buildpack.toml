@@ -1,7 +1,7 @@
 api = "0.2"
 
 [buildpack]
-id = "heroku/nodejs"
+id = "neetodeploy/nodejs"
 version = "0.5.14"
 name = "Node.js"
 homepage = "https://github.com/heroku/buildpacks-nodejs"
@@ -12,16 +12,16 @@ type = "MIT"
 [[order]]
 
 [[order.group]]
-id = "heroku/nodejs-engine"
+id = "neetodeploy/nodejs-engine"
 version = "0.8.15"
 
 [[order.group]]
-id = "heroku/nodejs-corepack"
+id = "neetodeploy/nodejs-corepack"
 version = "0.1.1"
 optional = true
 
 [[order.group]]
-id = "heroku/nodejs-yarn"
+id = "neetodeploy/nodejs-yarn"
 version = "0.3.2"
 
 [[order.group]]
@@ -32,11 +32,11 @@ optional = true
 [[order]]
 
 [[order.group]]
-id = "heroku/nodejs-engine"
+id = "neetodeploy/nodejs-engine"
 version = "0.8.15"
 
 [[order.group]]
-id = "heroku/nodejs-npm"
+id = "neetodeploy/nodejs-npm"
 version = "0.5.2"
 
 [[order.group]]

@@ -1,7 +1,7 @@
 api = "0.6"
 
 [buildpack]
-id = "heroku/nodejs-function-test"
+id = "neetodeploy/nodejs-function-test"
 version = "0.0.0"
 name = "Node.js Function"
 homepage = "https://github.com/heroku/buildpacks-nodejs"
@@ -12,15 +12,15 @@ type = "MIT"
 [[order]]
 
 [[order.group]]
-id = "heroku/nodejs-engine"
+id = "neetodeploy/nodejs-engine"
 version = "0.8.16"
 
 [[order.group]]
-id = "heroku/nodejs-npm"
+id = "neetodeploy/nodejs-npm"
 version = "0.5.3"
 
 [[order.group]]
-id = "heroku/nodejs-function-invoker"
+id = "neetodeploy/nodejs-function-invoker"
 version = "0.3.11"
 
 [metadata]

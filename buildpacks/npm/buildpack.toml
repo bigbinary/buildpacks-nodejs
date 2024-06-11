@@ -1,7 +1,7 @@
 api = "0.6"
 
 [buildpack]
-id = "heroku/nodejs-npm"
+id = "neetodeploy/nodejs-npm"
 version = "0.5.3"
 name = "NPM Buildpack"
 homepage = "https://github.com/heroku/buildpacks-nodejs"

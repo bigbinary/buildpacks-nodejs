@@ -1,7 +1,7 @@
 api = "0.8"
 
 [buildpack]
-id = "heroku/nodejs-yarn"
+id = "neetodeploy/nodejs-yarn"
 version = "0.3.3"
 name = "Heroku Node.js Yarn"
 homepage = "https://github.com/heroku/buildpacks-nodejs"

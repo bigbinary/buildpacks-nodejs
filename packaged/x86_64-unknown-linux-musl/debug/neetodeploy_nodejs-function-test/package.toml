@@ -1,0 +1,14 @@
+[buildpack]
+uri = "."
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/nodejs-engine"
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/npm"
+
+[[dependencies]]
+uri = "/Users/abhishekt/BB/Neeto/buildpacks-nodejs/buildpacks/nodejs-function-invoker"
+
+[platform]
+os = "linux"
